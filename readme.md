@@ -43,7 +43,7 @@ docker-compose up --build
 
 API available at:
 
-http://localhost:3000/api/hotels?city=delhi  
+http://localhost:3001/api/hotels?city=delhi  
 
 user this endpoint in postman after running the docker it will return best hotel prices after comparing the price for multiple suppliers. (All done by temporal workers in parallel.)
 

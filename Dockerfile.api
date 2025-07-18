@@ -1,0 +1,21 @@
+# Base image
+FROM node:18-alpine
+
+# Working directory
+WORKDIR /app
+
+# Install dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy source
+COPY . .
+
+# Build TypeScript before running
+RUN npx tsc
+
+# Expose port
+EXPOSE 3000
+
+# Start API
+CMD ["node", "dist/api/server.js"]

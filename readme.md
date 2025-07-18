@@ -34,7 +34,8 @@ Example response:
   }
 ]
 
-// Docker setup
+#### Docker setup
+
 Build & run locally:
 
 docker-compose up --build
